@@ -44,9 +44,9 @@ This confirms the app itself works before you wire up the pipeline.
 docker compose up --build
 ```
 
-- Frontend: http://localhost:3000
-- Backend: http://localhost:8080/api/clubs
-- Health check: http://localhost:8080/actuator/health
+- Frontend: http://localhost:3001
+- Backend: http://localhost:8081/api/clubs
+- Health check: http://localhost:8081/actuator/health
 
 Or run each piece manually while developing:
 
