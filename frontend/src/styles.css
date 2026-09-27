@@ -1,0 +1,191 @@
+/* Simple, plain styling on purpose - readable and functional, nothing fancy. */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1a1a1a;
+  background: #f5f5f5;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.topbar {
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.topbar nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.topbar nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.topbar nav a:hover {
+  text-decoration: underline;
+}
+
+.user-pill {
+  background: #eee;
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+button {
+  background: #2b5797;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #1e3f6f;
+}
+
+.content {
+  flex: 1;
+  padding: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.card.narrow {
+  max-width: 420px;
+  margin: 40px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+label {
+  font-size: 13px;
+  color: #555;
+  margin-top: 10px;
+}
+
+input, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+textarea {
+  min-height: 70px;
+}
+
+form button {
+  margin-top: 16px;
+  align-self: flex-start;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.muted {
+  color: #777;
+  font-size: 13px;
+  margin: 2px 0;
+}
+
+.error {
+  color: #b00020;
+  font-size: 14px;
+}
+
+.success {
+  color: #16794b;
+  font-size: 14px;
+}
+
+.quick-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.tile {
+  display: block;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #1a1a1a;
+  flex: 1;
+  text-align: center;
+}
+
+.tile:hover {
+  background: #f0f0f0;
+}
+
+.footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 12px;
+  color: #999;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+h1 { font-size: 22px; }
+h2 { font-size: 17px; margin-top: 0; }

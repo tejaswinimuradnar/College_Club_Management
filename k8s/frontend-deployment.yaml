@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: college-club-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: college-club-frontend
+  template:
+    metadata:
+      labels:
+        app: college-club-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: college-club-frontend:1.0
+          ports:
+            - containerPort: 80
