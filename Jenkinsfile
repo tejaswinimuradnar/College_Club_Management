@@ -2,6 +2,11 @@ pipeline {
 
     agent any
 
+    tools {
+        jdk 'JDK21'
+        maven 'Maven3'
+    }
+
     environment {
         BACKEND_IMAGE  = "college-club-backend:${BUILD_NUMBER}"
         FRONTEND_IMAGE = "college-club-frontend:${BUILD_NUMBER}"
